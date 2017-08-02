@@ -1,5 +1,24 @@
+#top-part{
+    margin-top: -200px;
+}
+
 .rounded-image{
     border-radius: 50%;
     height: 250px;
     margin-top: 5%;
+    background-color: #00acc1;
+}
+
+.large-text{
+    font-size: xx-large;
+}
+
+.content-titles{
+    text-decoration: underline;
+}
+
+.vertical-line{
+    display: block;
+    height: 100%;
+    background-color: black;
 }
