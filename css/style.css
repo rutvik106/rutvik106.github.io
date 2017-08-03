@@ -1,11 +1,10 @@
 #top-part{
-    margin-top: -200px;
+    margin-top: -150px;
 }
 
 .rounded-image{
     border-radius: 50%;
     height: 250px;
-    margin-top: 5%;
     background-color: #00acc1;
 }
 
@@ -14,7 +13,7 @@
 }
 
 .content-titles{
-    text-decoration: underline;
+    font-family: 'Delius', cursive;
 }
 
 .vertical-line{
@@ -31,4 +30,9 @@
 .social-btn{
     height: 30px;
     width: 30px;
+}
+
+.quote-font{
+    font-family: 'Finger Paint', cursive;
+    font-size: x-large;
 }
