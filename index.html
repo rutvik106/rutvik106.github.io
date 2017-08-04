@@ -16,13 +16,14 @@
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 
 <div class="row light-blue center">
     <br/>
     <br/>
     <br/>
-    <span class="white-text quote-font">"Great things in Business are never done by one person. They're done by a Team of people."</span>
+    <span id="quotes" class="white-text quote-font"></span>
     <br/>
     <br/>
     <br/>
@@ -72,14 +73,15 @@
 
     <div class="row">
         <div class="col s12">
-            <div class="card orange darken-1">
+            <div class="card amber darken-3">
                 <div class="card-content white-text">
                     <br/>
                     <!--<span class="card-title center content-titles">About Me</span>-->
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                    <p>I am a Software Engineer I believe in creating new things and exploring people with different
+                        skill set</p>
                     <div class="card-content center">
-                        <a class="waves-effect waves-light btn"><i class="material-icons left">file_download</i>Download My Resume</a>
+                        <a class="waves-effect waves-light light-blue btn"><i
+                                class="material-icons left">file_download</i>Download My Resume</a>
                     </div>
                 </div>
             </div>
@@ -133,54 +135,59 @@
 
     <div class="row">
         <div class="col s12 center">
-            <h4 class="content-titles">Projects</h4>
+            <h4 class="content-titles">Projects & Contributions</h4>
         </div>
     </div>
 
 
     <div class="row">
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/moodle.png">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4 truncate">Moodle Attendance<i
-                            class="material-icons right">more_vert</i></span>
-                    <p><a target="_blank"
-                          href="https://play.google.com/store/apps/details?id=com.rutvik.moodleattendanceapp">View On
-                        Play Store</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Moodle Attendance<i class="material-icons right">close</i></span>
-                    <p>Moodle Attendance is a customized Android App for managing attendance of students online on
-                        moblie phones.</p>
-                </div>
-            </div>
-        </div>
+
 
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/ems.png">
+                    <img class="activator" src="img/catnito.png">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">EMS<i
+                    <span class="card-title activator grey-text text-darken-4">Catnito<i
                             class="material-icons right">more_vert</i></span>
-                    <p><a target="_blank"
-                          href="https://play.google.com/store/apps/details?id=com.tapandtype.rutvik.ems">View On Play
-                        Store</a></p>
+                    <p><a target="_blank" href="https://play.google.com/store/apps/details?id=io.fusionbit.retrieve">View
+                        On Play Store</a></p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">EMS<i class="material-icons right">close</i></span>
-                    <p>Increase your customer to lead ratio.
-                        Increase your sales, profit and customer base.
-                        Also retain your customers, if need be.
-
-                        Trusted by leading business owners across many industries and service sector.</p>
+                    <span class="card-title grey-text text-darken-4">Catnito<i
+                            class="material-icons right">close</i></span>
+                    <p>Catnito protects your phone from getting lost by providing special features like, Preventing your
+                        phone from switching off while it is locked.Theft Detection helps you finding your lost phone.
+                        And Free-Fall alerts notifies you if you accidentally fall your phone.</p>
                 </div>
             </div>
         </div>
+
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/gperi.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Leave Application<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a target="_blank" href="http://www.moodle.gperi.ac.in/moodle/leave-application/index.php">View
+                        Live</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Leave Application<i
+                            class="material-icons right">close</i></span>
+                    <p>Created customized leave application for Gujarat Power Engineering & Research Institute
+                        for managing and granting leaves applications of staff members. Providing features like approval
+                        notification,
+                        Load adjustment, 3 step leave granting process(HoD, HR, Principal). Also integrated system with
+                        Moodle.</p>
+                </div>
+            </div>
+        </div>
+
 
         <div class="col s12 m4">
             <div class="card">
@@ -196,7 +203,8 @@
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">V Carry Motorist<i
                             class="material-icons right">close</i></span>
-                    <p>V Carry Motorist App helps you find the best transportation request.</p>
+                    <p>V Carry is a Startup company providing goods transport service. V Carry Motorist App helps
+                        associated and unassociated drivers managing trip requests in real time.</p>
                 </div>
             </div>
         </div>
@@ -216,7 +224,70 @@
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">V Carry Customer<i
                             class="material-icons right">close</i></span>
-                    <p>V Carry Customer App.</p>
+                    <p>V Carry is a Startup company providing goods transport service. V Carry Customer App helps
+                        associated and unassociated customers booking a trip. It also provides features like live trip
+                        status
+                        and tracking motorist.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/agrizip.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Agrizip<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a target="_blank" href="http://agrizip.com/">Unpublished</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Agrizip<i
+                            class="material-icons right">close</i></span>
+                    <p>I was working on this project when I was hired in Zestard/Srashtasoft Company.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/flirtjar.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Flirtjar<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="#">In Beta</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Flirtjar<i
+                            class="material-icons right">close</i></span>
+                    <p>Flirtjar is a dating app just like tinder but providing some awesome features.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/ems.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">EMS<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a target="_blank"
+                          href="https://play.google.com/store/apps/details?id=com.tapandtype.rutvik.ems">View On Play
+                        Store</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">EMS<i class="material-icons right">close</i></span>
+                    <p>EMS App was developed by me for Tap And Type Company Increase your customer to lead ratio.
+                        Increase your sales, profit and customer base.
+                        Also retain your customers, if need be.
+
+                        Trusted by leading business owners across many industries and service sector.</p>
                 </div>
             </div>
         </div>
@@ -249,6 +320,82 @@
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/ppp.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">AOS Cart<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="#">Unpublished</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">AOS Cart<i
+                            class="material-icons right">close</i></span>
+                    <p>Avoide Online Shopping was a project of Ultimate Info Ways Company</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/makemylens.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Make My Lens<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="#">Unpublished</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Make My Lens<i
+                            class="material-icons right">close</i></span>
+                    <p>makemylens.in is a Company selling optics and contact lenses. This app was developed on Ionic
+                        Framework</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/prozm.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">PROZM<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="#">Outsourced</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">PROZM<i
+                            class="material-icons right">close</i></span>
+                    <p>Was a outsource work from Mumbai related to Customization on Moodle Moble 2 App.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/oponion.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Oponion<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="#">In Beta</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Oponion<i
+                            class="material-icons right">close</i></span>
+                    <p>A friends dream project on opinion mining.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="img/sts.png">
                 </div>
                 <div class="card-content">
@@ -261,27 +408,6 @@
                     <span class="card-title grey-text text-darken-4">STS<i
                             class="material-icons right">close</i></span>
                     <p>Goverment Project of ICTINFRACON. Student Tracking System for Karnataka.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/catnito.png">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Catnito<i
-                            class="material-icons right">more_vert</i></span>
-                    <p><a target="_blank" href="https://play.google.com/store/apps/details?id=io.fusionbit.retrieve">View
-                        On Play Store</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Catnito<i
-                            class="material-icons right">close</i></span>
-                    <p>Catnito protects your phone from getting lost by providing special features like, Preventing your
-                        phone from switching off while it is locked.Theft Detection helps you finding your lost phone.
-                        And Free-Fall alerts notifies you if you accidentally fall your phone.</p>
                 </div>
             </div>
         </div>
@@ -307,60 +433,6 @@
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/scm.png">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">SCM<i
-                            class="material-icons right">more_vert</i></span>
-                    <p><a href="#">View Screenshots</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">SCM<i
-                            class="material-icons right">close</i></span>
-                    <p>SCM</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/500px.png">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">My 500px<i
-                            class="material-icons right">more_vert</i></span>
-                    <p><a target="_blank" href="https://www.facebook.com/rutvik106/media_set?set=a.4559579043169.1073741848.1702347571&type=3">View Screenshots</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">My 500px<i
-                            class="material-icons right">close</i></span>
-                    <p>My 500px</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/albumsync.png">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Facebook Album Sync<i
-                            class="material-icons right">more_vert</i></span>
-                    <p><a target="_blank" href="https://appworld.blackberry.com/webstore/content/23005888/?countrycode=IN&lang=en">BlackBerry App World</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Facebook Album Sync<i
-                            class="material-icons right">close</i></span>
-                    <p>Facebook Album Sync</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="img/elefante.png">
                 </div>
                 <div class="card-content">
@@ -371,7 +443,7 @@
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Elefante<i
                             class="material-icons right">close</i></span>
-                    <p>Elefante</p>
+                    <p>Elefante App helps jaipur elephant welfare to manage and keep track of health of elephants.</p>
                 </div>
             </div>
         </div>
@@ -379,17 +451,37 @@
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/gperi.png">
+                    <img class="activator" src="img/moodle.png">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Leave Application<i
+                    <span class="card-title activator grey-text text-darken-4 truncate">Moodle Attendance<i
                             class="material-icons right">more_vert</i></span>
-                    <p><a target="_blank" href="http://www.moodle.gperi.ac.in/moodle/leave-application/index.php">View Live</a></p>
+                    <p><a target="_blank"
+                          href="https://play.google.com/store/apps/details?id=com.rutvik.moodleattendanceapp">View On
+                        Play Store</a></p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Leave Application<i
+                    <span class="card-title grey-text text-darken-4">Moodle Attendance<i class="material-icons right">close</i></span>
+                    <p>Moodle Attendance is a customized Android App for managing attendance of students online on
+                        moblie phones.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/trails.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Trails<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><a href="#">In Progress</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Trails<i
                             class="material-icons right">close</i></span>
-                    <p>Leave Application</p>
+                    <p>BE 8th Sem Project. Trails is a app for security and family.</p>
                 </div>
             </div>
         </div>
@@ -407,7 +499,9 @@
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Picture Perfect Pro<i
                             class="material-icons right">close</i></span>
-                    <p>Picture Perfect Pro</p>
+                    <p>BE 7th Sem Project. Picture Perfect Pro lets you search best photos on Flicker, 500px and
+                        Smugmug. Create you photo collections.
+                        Subscribe to a friends collection. See nearby interesting photos based on location.</p>
                 </div>
             </div>
         </div>
@@ -415,17 +509,20 @@
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/trails.png">
+                    <img class="activator" src="img/500px.png">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Trails<i
+                    <span class="card-title activator grey-text text-darken-4">My 500px<i
                             class="material-icons right">more_vert</i></span>
-                    <p><a href="#">Coming Soon</a></p>
+                    <p><a target="_blank"
+                          href="https://www.facebook.com/rutvik106/media_set?set=a.4559579043169.1073741848.1702347571&type=3">View
+                        Screenshots</a></p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Trails<i
+                    <span class="card-title grey-text text-darken-4">My 500px<i
                             class="material-icons right">close</i></span>
-                    <p>Trails</p>
+                    <p>My 500px gives best experience of 500px.com on your windows phone. It was a windows phone app
+                        built on c# using 500px API.</p>
                 </div>
             </div>
         </div>
@@ -433,17 +530,21 @@
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/agrizip.png">
+                    <img class="activator" src="img/albumsync.png">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Agrizip<i
+                    <span class="card-title activator grey-text text-darken-4">Facebook Album Sync<i
                             class="material-icons right">more_vert</i></span>
-                    <p><a href="#">Unpublished</a></p>
+                    <p><a target="_blank"
+                          href="https://appworld.blackberry.com/webstore/content/23005888/?countrycode=IN&lang=en">BlackBerry
+                        App World</a></p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Agrizip<i
+                    <span class="card-title grey-text text-darken-4">Facebook Album Sync<i
                             class="material-icons right">close</i></span>
-                    <p>Agrizip</p>
+                    <p>Facebook Album Sync App allows you to sync all your facebook albums on your device. It was build
+                        using
+                        Adobe Action Script 3.</p>
                 </div>
             </div>
         </div>
@@ -451,131 +552,130 @@
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/makemylens.png">
+                    <img class="activator" src="img/scm.png">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Make My Lens<i
+                    <span class="card-title activator grey-text text-darken-4">SCM<i
                             class="material-icons right">more_vert</i></span>
-                    <p><a href="#">Unpublished</a></p>
+                    <p><a href="#">View Screenshots</a></p>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Make My Lens<i
+                    <span class="card-title grey-text text-darken-4">SCM<i
                             class="material-icons right">close</i></span>
-                    <p>Make My Lens</p>
+                    <p>SCM Supply Chain Management System lets you manage orders, customers, suppliers and inventories.
+                        It was my Diploma project build using c#.Net.</p>
                 </div>
             </div>
         </div>
 
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/ppp.png">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">AOS Cart<i
-                            class="material-icons right">more_vert</i></span>
-                    <p><a href="#">Unpublished</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">AOS Cart<i
-                            class="material-icons right">close</i></span>
-                    <p>AOS Cart</p>
-                </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col s12 center">
+            <h4 class="content-titles">Photography</h4>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col s12 center">
+            <div class="carousel">
+
+                <a class="carousel-item"
+                   href="https://500px.com/photo/139805947/city-lights-by-rutvik-mehta?ctx_page=1&from=user&user_id=2313647">
+                    <img src="https://drscdn.500px.org/photo/139805947/q%3D80_m%3D1500/v2?webp=true&sig=dfb4031c32d3e2a8126491d99328cefb32d2d6660f59bf57343b3eb58f9a939a">
+                </a>
+
+                <a class="carousel-item"
+                   href="https://500px.com/photo/139749451/spiral-curve-by-rutvik-mehta?ctx_page=1&from=user&user_id=2313647">
+                    <img src="https://drscdn.500px.org/photo/139749451/q%3D80_m%3D1500/v2?webp=true&sig=25428966cc9d9f01719a60d7b1095784b983f2494e619a2b51ee47c8677f36c9">
+                </a>
+
+                <a class="carousel-item"
+                   href="https://500px.com/photo/139749453/light-cycle-by-rutvik-mehta?ctx_page=1&from=user&user_id=2313647">
+                    <img src="https://drscdn.500px.org/photo/139749453/q%3D80_m%3D1500/v2?webp=true&sig=4a56a0cdd313d89a56b384393bdf6ed5e99ec664ce46b2aaaefb798487b95118">
+                </a>
+
+                <a class="carousel-item"
+                   href="https://500px.com/photo/25601455/straws-by-rutvik-mehta?ctx_page=2&from=user&user_id=2313647">
+                    <img src="https://drscdn.500px.org/photo/25601455/q%3D80_m%3D1500/v2?webp=true&sig=7d2814c0e528bf7599ae323aa6e6713399558cafc827545c9b2475b6dee94adf">
+                </a>
+
+                <a class="carousel-item"
+                   href="https://500px.com/photo/24750475/peacock-feathers-by-rutvik-mehta?ctx_page=2&from=user&user_id=2313647">
+                    <img src="https://drscdn.500px.org/photo/24750475/q%3D80_m%3D1500/v2?webp=true&sig=6fe2dc5f3ec721fd03abff901b803b732dcf87e6aaf47e42f5f9683dfd8b010a">
+                </a>
+
+                <a class="carousel-item"
+                   href="https://500px.com/photo/101135387/blossom-in-lights-by-rutvik-mehta?ctx_page=1&from=user&user_id=2313647">
+                    <img src="https://drscdn.500px.org/photo/101135387/q%3D80_m%3D1500/v2?webp=true&sig=26a289d78564a2c45fec6b406d69000cc4b33e3a3a875fb27a6c5ed738259663">
+                </a>
+
+                <a class="carousel-item"
+                   href="https://500px.com/photo/79339355/the-burning-rose-by-rutvik-mehta?ctx_page=1&from=user&user_id=2313647">
+                    <img src="https://drscdn.500px.org/photo/79339355/q%3D80_m%3D1500/v2?webp=true&sig=3ab02cbb380826e7edb36ca88669deb31783195911ff61d203338f6a45867061">
+                </a>
+
+                <a class="carousel-item"
+                   href="https://500px.com/photo/62260701/freezing-speed-by-rutvik-mehta?ctx_page=1&from=user&user_id=2313647">
+                    <img src="https://drscdn.500px.org/photo/62260701/q%3D80_m%3D1500/v2?webp=true&sig=87dd5f05a1dbcae1dd94c4f3dd09703c8003936d2d7983c3753a9f6a01fc08ca">
+                </a>
+
+                <a class="carousel-item"
+                   href="https://500px.com/photo/54172510/cat-by-rutvik-mehta?ctx_page=2&from=user&user_id=2313647">
+                    <img src="https://drscdn.500px.org/photo/54172510/q%3D80_m%3D1500/v2?webp=true&sig=0e3157850338b7f3478a2f05f9518d51e81b76f162801b8f5a0679ab48606f7a">
+                </a>
+
+                <a class="carousel-item"
+                   href="https://500px.com/photo/25601459/coins-by-rutvik-mehta?ctx_page=2&from=user&user_id=2313647">
+                    <img src="https://drscdn.500px.org/photo/25601459/q%3D80_m%3D1500/v2?webp=true&sig=1b9b0adced967ca51c48551ba284791809630bf2b2b6c255af90c0929a7e45ff">
+                </a>
+
+
             </div>
         </div>
-
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/oponion.png">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Oponion<i
-                            class="material-icons right">more_vert</i></span>
-                    <p><a href="#">Unpublished</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Oponion<i
-                            class="material-icons right">close</i></span>
-                    <p>Oponion</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/flirtjar.png">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Flirtjar<i
-                            class="material-icons right">more_vert</i></span>
-                    <p><a href="#">In Beta</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Flirtjar<i
-                            class="material-icons right">close</i></span>
-                    <p>Flirtjar</p>
-                </div>
-            </div>
-        </div>
+    </div>
 
 
-        <div class="col s12 m4">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/prozm.png">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">PROZM<i
-                            class="material-icons right">more_vert</i></span>
-                    <p><a href="#">Unpublished</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">PROZM<i
-                            class="material-icons right">close</i></span>
-                    <p>PROZM</p>
-                </div>
-            </div>
-        </div>
 
 
+    <div class="row">
         <div class="col s12 center">
             <h4 class="content-titles">Promo Videos</h4>
         </div>
     </div>
 
+
     <div class="row">
         <div class="col s12 m6">
             <div class="video-container" style="margin-bottom: 5%">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/jNvJHPDZWDs" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jNvJHPDZWDs" frameborder="0"
+                        allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="col s12 m6">
             <div class="video-container" style="margin-bottom: 5%">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/62WMKJTYENQ" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/62WMKJTYENQ" frameborder="0"
+                        allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="col s12 m6">
             <div class="video-container" style="margin-bottom: 5%">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6n3LIUOYIYU" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6n3LIUOYIYU" frameborder="0"
+                        allowfullscreen></iframe>
             </div>
         </div>
     </div>
-
-
-    <div class="row">
-        <div class="col s12">
-        </div>
-    </div>
-
 
 </div>
 
 
-<footer class="page-footer">
+<!--THIS IS A FOOTER PART-->
+
+<footer class="page-footer" style="background-color: #03a9f4">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -586,16 +686,20 @@
             <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Social</h5>
                 <ul style="list-style-type: none">
-                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3" href="https://www.facebook.com/rutvik106">
+                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
+                                                                      href="https://www.facebook.com/rutvik106">
                         <img class="social-btn" src="img/facebook.png">
                     </a></li>
-                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3" href="https://twitter.com/Rutvik106">
+                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
+                                                                      href="https://twitter.com/Rutvik106">
                         <img class="social-btn" src="img/twitter.png">
                     </a></li>
-                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3" href="https://github.com/rutvik106">
+                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
+                                                                      href="https://github.com/rutvik106">
                         <img class="social-btn" src="img/github.png">
                     </a></li>
-                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3" href="https://www.linkedin.com/in/rutvik-mehta-33b0b139/">
+                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
+                                                                      href="https://www.linkedin.com/in/rutvik-mehta-33b0b139/">
                         <img class="social-btn" src="img/linkedin.png">
                     </a></li>
                 </ul>
