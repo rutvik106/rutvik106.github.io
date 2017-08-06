@@ -36,3 +36,10 @@
     font-family: 'Mountains of Christmas', cursive;
     font-size: 32px;
 }
+
+.cover-background{
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/cover-bg2.jpg');
+    position: absolute;
+}
