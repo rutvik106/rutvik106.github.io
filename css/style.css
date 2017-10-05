@@ -43,3 +43,7 @@
     background-image: url('../img/cover-bg2.jpg');
     position: absolute;
 }
+
+.default-cursor:hover{
+    cursor: default;
+}
