@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #fefefe">
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -81,6 +81,10 @@
             <div id="my-name">
 
                 <span class="large-text content-titles default-cursor">Rutvik Mehta</span>
+                <br>
+                <span class="content-titles default-cursor"
+                      style="color: rgb(254,255,0);">{ 10th June born gemini }</span>
+                <br/>
                 <br/>
                 <span class="default-cursor"
                       style="color: #666666;">Full-Stack Developer | Photographer | Animal Lover</span>
@@ -115,6 +119,21 @@
 
 
     <div class="row">
+
+        <div class="col s12 center" id="my-heart">
+
+            <div id="mom" class="circle"></div>
+            <div id="dad" class="circle"></div>
+            <div id="sis" class="circle"></div>
+            <div id="wife" class="circle"></div>
+
+            <svg id="heart-core" class="heart heart-animation" viewBox="0 0 32 29.6">
+                <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+            </svg>
+
+        </div>
+
         <div class="col s12">
             <div class="card amber darken-3">
                 <div class="card-content white-text">
@@ -148,20 +167,6 @@
         </div>
     </div>
 
-    <div class="row" id="my-heart">
-        <div class="col s12 center">
-
-            <div id="mom" class="circle"></div>
-            <div id="dad" class="circle"></div>
-            <div id="sis" class="circle"></div>
-            <div id="wife" class="circle"></div>
-
-            <svg id="heart-core" class="heart heart-animation" viewBox="0 0 32 29.6">
-                <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
-	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
-            </svg>
-        </div>
-    </div>
 
     <br>
 
@@ -271,10 +276,10 @@
                     <span class="card-title activator grey-text text-darken-4">Kitizen Science<i
                             class="material-icons right">more_vert</i></span>
                     <p><a target="_blank"
-                          href="https://play.google.com/store/apps/details?id=in.fusionbit.kitizenscienceapp">Play
-                        Store</a>
+                          href="https://play.google.com/store/apps/details?id=in.fusionbit.kitizenscienceapp">Android</a>
+                        &nbsp;
                         <a target="_blank"
-                           href="https://apps.apple.com/us/app/id1520200300">App Store</a></p>
+                           href="https://apps.apple.com/us/app/id1520200300">iOS</a></p>
                 </div>
 
             </div>
@@ -1066,7 +1071,7 @@
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">SCM<i
                             class="material-icons right">more_vert</i></span>
-                    <p><a target="_blank" href="https://www.youtube.com/embed/jNvJHPDZWDs">View</a></p>
+                    <p><a target="_blank" href="https://www.youtube.com/embed/jNvJHPDZWDs">View Demo</a></p>
                 </div>
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">SCM<i
