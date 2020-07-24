@@ -148,6 +148,21 @@
         </div>
     </div>
 
+    <div class="row" id="my-heart">
+        <div class="col s12 center">
+
+            <div id="mom" class="circle"></div>
+            <div id="dad" class="circle"></div>
+            <div id="sis" class="circle"></div>
+            <div id="wife" class="circle"></div>
+
+            <svg id="heart-core" class="heart heart-animation" viewBox="0 0 32 29.6">
+                <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+            </svg>
+        </div>
+    </div>
+
     <br>
 
     <div class="row">
@@ -1383,6 +1398,21 @@
     $(document).ready(function () {
 
         setInterval(randomizeProp, 5000);
+
+        $('#my-heart').hover(function () {
+            $('#mom').addClass('mom-animation');
+            $('#dad').addClass('dad-animation');
+            $('#sis').addClass('sis-animation');
+            $('#wife').addClass('wife-animation');
+            $('#heart-core').removeClass('heart-animation');
+
+        }, function () {
+            $('#mom').removeClass('mom-animation');
+            $('#dad').removeClass('dad-animation');
+            $('#sis').removeClass('sis-animation');
+            $('#wife').removeClass('wife-animation');
+            $('#heart-core').addClass('heart-animation');
+        });
 
     });
 
