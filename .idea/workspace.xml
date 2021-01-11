@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="84100fee-3181-4a3a-a452-2f62f85670c3" name="Default" comment="">
+    <list default="true" id="84100fee-3181-4a3a-a452-2f62f85670c3" name="Default" comment="changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -164,7 +182,7 @@
       <workItem from="1595443313596" duration="5196000" />
       <workItem from="1595519424361" duration="13160000" />
       <workItem from="1610392929381" duration="34000" />
-      <workItem from="1610392984640" duration="126000" />
+      <workItem from="1610392984640" duration="388000" />
     </task>
     <task id="LOCAL-00001" summary="added 3 new projects and 1 new skill">
       <created>1518420018230</created>
@@ -341,11 +359,29 @@
       <option name="project" value="LOCAL" />
       <updated>1595614152250</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="changes.">
+      <created>1610393153345</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1610393153345</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -372,5 +408,11 @@
     <MESSAGE value="added heart animation css, images and animation." />
     <MESSAGE value="changes." />
     <option name="LAST_COMMIT_MESSAGE" value="changes." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1610393155842">
+      <screen x="0" y="25" width="1440" height="813" />
+    </state>
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.25.1440.813@0.25.1440.813" timestamp="1610393155842" />
   </component>
 </project>
