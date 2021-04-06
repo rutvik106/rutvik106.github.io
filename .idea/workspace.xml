@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84100fee-3181-4a3a-a452-2f62f85670c3" name="Default" comment="changes.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="84100fee-3181-4a3a-a452-2f62f85670c3" name="Default" comment="Updated email and photo.">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,17 +52,17 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="inde&#9;FILE&#9;file:///Users/rutvikmehta/Documents/GitHub/rutvikmehta/index.html&#10;sty&#9;FILE&#9;file:///Users/rutvikmehta/Documents/GitHub/rutvikmehta/css/style.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img/heart" />
-      <recent name="$PROJECT_DIR$/img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/heart" />
+      <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
@@ -183,7 +182,7 @@
       <workItem from="1595519424361" duration="13160000" />
       <workItem from="1610392929381" duration="34000" />
       <workItem from="1610392984640" duration="447000" />
-      <workItem from="1617708586755" duration="547000" />
+      <workItem from="1617708586755" duration="734000" />
     </task>
     <task id="LOCAL-00001" summary="added 3 new projects and 1 new skill">
       <created>1518420018230</created>
@@ -374,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610393404879</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Updated email and photo.">
+      <created>1617709834010</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1617709834010</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,12 +419,7 @@
     <MESSAGE value="update." />
     <MESSAGE value="added heart animation css, images and animation." />
     <MESSAGE value="changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="changes." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1610393406712">
-      <screen x="0" y="25" width="1440" height="813" />
-    </state>
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.25.1440.813@0.25.1440.813" timestamp="1610393406712" />
+    <MESSAGE value="Updated email and photo." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated email and photo." />
   </component>
 </project>
