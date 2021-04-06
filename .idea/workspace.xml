@@ -182,7 +182,8 @@
       <workItem from="1595443313596" duration="5196000" />
       <workItem from="1595519424361" duration="13160000" />
       <workItem from="1610392929381" duration="34000" />
-      <workItem from="1610392984640" duration="388000" />
+      <workItem from="1610392984640" duration="447000" />
+      <workItem from="1617708586755" duration="547000" />
     </task>
     <task id="LOCAL-00001" summary="added 3 new projects and 1 new skill">
       <created>1518420018230</created>
@@ -366,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610393153345</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="changes.">
+      <created>1610393404879</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1610393404879</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,9 +390,7 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added 3 new projects and 1 new skill" />
@@ -410,9 +416,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="changes." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1610393155842">
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2" timestamp="1610393406712">
       <screen x="0" y="25" width="1440" height="813" />
     </state>
-    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.25.1440.813@0.25.1440.813" timestamp="1610393155842" />
+    <state x="320" y="168" key="Vcs.Push.Dialog.v2/0.25.1440.813@0.25.1440.813" timestamp="1610393406712" />
   </component>
 </project>
