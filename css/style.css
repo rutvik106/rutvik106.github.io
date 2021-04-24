@@ -307,14 +307,14 @@
     width: 40%;
 }
 
-.show, .hide {
+.show, .hide2 {
     position: absolute;
     bottom: -1em;
     z-index: 100;
     text-align: center;
 }
 
-.hide {
+.hide2 {
     display: none;
 }
 
@@ -322,7 +322,7 @@
     display: none;
 }
 
-.show:target ~ .hide {
+.show:target ~ .hide2 {
     display: block;
 }
 
@@ -331,7 +331,7 @@
 }
 
 .show:target ~ .fade {
-    margin-top: 0;
+    display: none;
 }
 
 .panel {
