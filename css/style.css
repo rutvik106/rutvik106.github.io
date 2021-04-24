@@ -307,7 +307,7 @@
     width: 40%;
 }
 
-.show, .hide2 {
+.show2, .hide2 {
     position: absolute;
     bottom: -1em;
     z-index: 100;
@@ -318,19 +318,19 @@
     display: none;
 }
 
-.show:target {
+.show2:target {
     display: none;
 }
 
-.show:target ~ .hide2 {
+.show2:target ~ .hide2 {
     display: block;
 }
 
-.show:target ~ .panel {
+.show2:target ~ .panel {
     max-height: 100%;
 }
 
-.show:target ~ .fade {
+.show2:target ~ .fade {
     display: none;
 }
 

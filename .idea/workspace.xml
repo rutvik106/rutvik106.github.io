@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84100fee-3181-4a3a-a452-2f62f85670c3" name="Default" comment="New updates">
+    <list default="true" id="84100fee-3181-4a3a-a452-2f62f85670c3" name="Default" comment="improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -193,7 +193,7 @@
       <workItem from="1610392929381" duration="34000" />
       <workItem from="1610392984640" duration="447000" />
       <workItem from="1617708586755" duration="961000" />
-      <workItem from="1619273949413" duration="4396000" />
+      <workItem from="1619273949413" duration="5185000" />
     </task>
     <task id="LOCAL-00001" summary="added 3 new projects and 1 new skill">
       <created>1518420018230</created>
@@ -405,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619277335283</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="improvements">
+      <created>1619283106956</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1619283106957</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,6 +454,7 @@
     <MESSAGE value="Updated email and photo." />
     <MESSAGE value="updated company." />
     <MESSAGE value="New updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="New updates" />
+    <MESSAGE value="improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="improvements" />
   </component>
 </project>
