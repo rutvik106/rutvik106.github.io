@@ -1483,30 +1483,46 @@
                     <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
                                                                       href="https://github.com/rutvik106">
                         <img class="social-btn" src="img/github.png">
-                    </a></li>
-                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
-                                                                      href="https://www.linkedin.com/in/rutvik-mehta-33b0b139/">
-                        <img class="social-btn" src="img/linkedin.png">
-                    </a></li>
-                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
-                                                                      href="https://500px.com/rutvikmehta">
-                        <img class="social-btn" src="img/500px_logo.png">
-                    </a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            <span class="default-cursor">Rutvik Mehta</span>
-            <span style="" class="grey-text text-lighten-4 right">Director <a target="_blank"
-                                                                     style="color: white; text-decoration: underline;"
-                                                                     href="http://identitysignet.com/">Identitysignet Ltd.</a> | CTO <a
-                    target="_blank" href="https://stellartech.in" style="color: white; text-decoration: underline;">Stellartech</a>
-                | Proprietor <a target="_blank"
-                                style="color: white; text-decoration: underline;"
-                                href="http://rutvik.fusionbit.in/">Fusionbit</a> | Working partner <a target="_blank"
-                                                                                                style="color: white; text-decoration: underline;"
+<script>
+
+    var props = 1;
+
+    $(document).ready(function () {
+
+        // Initialize mobile sidenav
+        $('.sidenav').sidenav();
+
+        // Smooth scrolling for navigation links
+        $('nav a[href^="#"], .sidenav a[href^="#"]').click(function(e) {
+            var target = $(this.hash);
+            if (target.length) {
+                e.preventDefault();
+                $('.sidenav').sidenav('close');
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 80
+                }, 800);
+            }
+        });
+
+        setInterval(randomizeProp, 5000);
+
+        $('#my-heart').hover(function () {
+            $('#mom').addClass('mom-animation');
+            $('#dad').addClass('dad-animation');
+            $('#sis').addClass('sis-animation');
+            $('#wife').addClass('wife-animation');
+            $('#heart-core').removeClass('heart-animation');
+
+        }, function () {
+            $('#mom').removeClass('mom-animation');
+            $('#dad').removeClass('dad-animation');
+            $('#sis').removeClass('sis-animation');
+            $('#wife').removeClass('wife-animation');
+            $('#heart-core').addClass('heart-animation');
+        });
+
+    });
+
                                                                                                 href="http://limpiar.app/">Limpiar Servicio LLP.</a></span>
         </div>
     </div>
