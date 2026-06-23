@@ -37,8 +37,34 @@
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
+<!-- Professional Header Navigation -->
+<header class="site-header">
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">
+                    <span class="logo-text">Rutvik Mehta</span>
+                    <span class="logo-tagline">Full-Stack Developer</span>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#top-part" class="nav-link">About</a></li>
+                    <li><a href="#skills-section" class="nav-link">Skills</a></li>
+                    <li><a href="#projects-section" class="nav-link">Projects</a></li>
+                    <li><a href="#photography-section" class="nav-link">Photography</a></li>
+                    <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
-<div class="row light-blue center">
+<div class="hero-header">
+    <div class="hero-overlay"></div>
     <div class="doodle-background"></div>
 </div>
 
@@ -124,12 +150,13 @@
                 </div>
 
                 <div class="card-content white-text">
-                    <br/>
-                    <p class="default-cursor" style="text-align: justify">I am a person with a spirit of doing something
-                        which has lots of
-                        challenges and risks in it. I always
-                        love helping others. Though I am a gizzmo addict, I dream of living a social life. I am a
-                        software
+    <br>
+
+    <div class="row" id="skills-section">
+        <div class="col s12 center">
+            <h4 class="content-titles default-cursor">Skills</h4>
+        </div>
+    </div>
                         Engineer by profession, a passionate coder and a photographer. Along with my skills, I put all
                         my
                         heart in whatever projects I do. I enjoy coding and applying skills to develop new things. I
@@ -213,12 +240,14 @@
             <div class="chip">
                 Git Hub
             </div>
-            <div class="chip">
-                XMPP
-            </div>
-            <div class="chip">
-                Openfire
-            </div>
+    <br>
+    <br>
+
+    <div class="row" id="projects-section">
+        <div class="col s12 center">
+            <h4 class="content-titles default-cursor">Projects & Contributions</h4>
+        </div>
+    </div>
             <div class="chip">
                 Smack
             </div>
@@ -1135,12 +1164,13 @@
                             build
                             using
                             Adobe Action Script 3.</p>
-                    </div>
-                </div>
-            </div>
+    <br>
 
-            <div class="col s12 m6 l4">
-                <div class="card">
+    <div class="row" id="photography-section">
+        <div class="col s12 center">
+            <h4 class="content-titles default-cursor">Photography</h4>
+        </div>
+    </div>
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="img/scm.png">
                     </div>
@@ -1394,7 +1424,9 @@
             <div class="video-container" style="margin-bottom: 5%">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/PiB82mj5s4Y" frameborder="0"
                         allowfullscreen></iframe>
-            </div>
+<!--THIS IS A FOOTER PART-->
+
+<footer class="page-footer" id="contact-section" style="background-color: #03a9f4">
         </div>
 
         <div class="col s12 m6">
@@ -1506,7 +1538,59 @@
             $('#heart-core').addClass('heart-animation');
         });
 
+
+<script>
+    // Mobile menu toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        const header = document.querySelector('.site-header');
+        
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+        
+        // Close mobile menu when clicking nav links
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth scroll offset for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '#show2' && href !== '#hide2') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
     });
+</script>
+
 
     function randomizeProp()
     {
