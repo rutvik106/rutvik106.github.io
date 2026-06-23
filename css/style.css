@@ -350,7 +350,48 @@
     width: 40%;
 }
 
-.show2, .hide2 {
+}
+
+/* Responsive Header Adjustments */
+@media only screen and (max-width: 992px) {
+    .site-header .brand-logo {
+        font-size: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .hero-section {
+        margin-top: 60px;
+    }
+    
+    #top-part {
+        margin-top: -120px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .site-header nav {
+        height: 60px;
+        line-height: 60px;
+    }
+    
+    .site-header .brand-logo {
+        font-size: 1.3rem;
+    }
+    
+    .hero-section {
+        margin-top: 60px;
+    }
+    
+    .doodle-background {
+        height: 280px;
+    }
+    
+    #top-part {
+        margin-top: -100px;
+    }
+}
+
     position: absolute;
     bottom: -1em;
     z-index: 100;
