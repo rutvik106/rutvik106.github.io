@@ -37,21 +37,77 @@
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
+<!-- Modern Professional Header -->
+<header class="site-header" role="banner">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#top" class="brand-link" aria-label="Rutvik Mehta - Home">
+                    <span class="brand-name">Rutvik</span><span class="brand-accent">Mehta</span>
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#photography" class="nav-link" role="menuitem">Photography</a></li>
+                <li role="none"><a href="#contact" class="nav-link nav-link-cta" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="hero-section">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="particle-effect"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-subtitle">Full-Stack Developer & Creative</span>
+                    <span class="hero-name">Rutvik Mehta</span>
+                </h1>
+                <p class="hero-tagline">
+                    <span class="tagline-item">💻 Developer</span>
+                    <span class="tagline-separator">•</span>
+                    <span class="tagline-item">📸 Photographer</span>
+                    <span class="tagline-separator">•</span>
+                    <span class="tagline-item">🐾 Animal Lover</span>
+                </p>
+                <p class="hero-description">
+                    Crafting elegant solutions with code, capturing moments through the lens, and making a difference in the world
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </div>
+</header>
 
-<div class="row light-blue center">
-    <div class="doodle-background"></div>
-</div>
+<div id="about"></div>
 
 <div class="container">
 
 
-    <div class="row" id="top-part">
+    <div class="row profile-section" id="top-part">
 
         <div class="col s12 center">
 
-            <div id="me">
+            <div id="me" class="profile-image-wrapper">
 
-                <img class="rounded-image" src="img/me2.jpeg">
+                <img class="rounded-image profile-image" src="img/me2.jpeg" alt="Rutvik Mehta - Professional Portrait">
+                <div class="image-ring"></div>
 
             </div>
 
@@ -64,16 +120,17 @@
 
         <div class="col s12 center">
 
-            <div id="my-name">
+            <div id="my-name" class="profile-intro">
 
-                <span class="large-text content-titles default-cursor">rutvikMehta</span>
-                <br>
-                {<span class="content-titles default-cursor"
-                       style="color: rgb(253,231,78);"> june born gemini </span>}
-                <br/>
-                <br/>
-                <span class="default-cursor"
-                      style="color: #666666;">Full-Stack Developer | Photographer | Animal Lover</span>
+                <h2 class="profile-name">
+                    <span class="large-text content-titles default-cursor name-text">rutvikMehta</span>
+                </h2>
+                <p class="profile-badge">
+                    {<span class="content-titles default-cursor gemini-text"> june born gemini </span>}
+                </p>
+                <p class="profile-subtitle default-cursor">
+                    Full-Stack Developer | Photographer | Animal Lover
+                </p>
 
             </div>
 
@@ -151,9 +208,10 @@
 
     <br>
 
+    <div id="skills"></div>
     <div class="row">
         <div class="col s12 center">
-            <h4 class="content-titles default-cursor">Skills</h4>
+            <h4 class="content-titles default-cursor section-title">Skills</h4>
         </div>
     </div>
 
@@ -241,9 +299,10 @@
     <br>
     <br>
 
+    <div id="projects"></div>
     <div class="row">
         <div class="col s12 center">
-            <h4 class="content-titles default-cursor">Projects & Contributions</h4>
+            <h4 class="content-titles default-cursor section-title">Projects & Contributions</h4>
         </div>
     </div>
 
@@ -1165,9 +1224,10 @@
 
     <br>
 
+    <div id="photography"></div>
     <div class="row">
         <div class="col s12 center">
-            <h4 class="content-titles default-cursor">Photography</h4>
+            <h4 class="content-titles default-cursor section-title">Photography</h4>
         </div>
     </div>
 
@@ -1425,6 +1485,7 @@
 
 <!--THIS IS A FOOTER PART-->
 
+<div id="contact"></div>
 <footer class="page-footer" style="background-color: #03a9f4">
     <div class="container">
         <div class="row">
