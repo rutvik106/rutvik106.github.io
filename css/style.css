@@ -242,7 +242,11 @@ html {
     outline: 2px solid white;
     outline-offset: 2px;
 }
-
+#top-part {
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+}
 /* Animation for mobile menu icon */
 .mobile-menu-toggle.active span:nth-child(1) {
     transform: rotate(45deg) translate(8px, 8px);
