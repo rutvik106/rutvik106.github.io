@@ -1483,42 +1483,34 @@
                 <h5 class="white-text default-cursor">Social</h5>
                 <ul style="list-style-type: none">
                     <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
-                                                                      href="https://github.com/rutvik106">
-                        <img class="social-btn" src="img/github.png">
-                    </a></li>
-                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
-                                                                      href="https://www.linkedin.com/in/rutvik-mehta-33b0b139/">
-                        <img class="social-btn" src="img/linkedin.png">
-                    </a></li>
-                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
-                                                                      href="https://500px.com/rutvikmehta">
-                        <img class="social-btn" src="img/500px_logo.png">
-                    </a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            <span class="default-cursor">Rutvik Mehta</span>
-            <span style="" class="grey-text text-lighten-4 right">Director <a target="_blank"
-                                                                     style="color: white; text-decoration: underline;"
-                                                                     href="http://identitysignet.com/">Identitysignet Ltd.</a> | CTO <a
-                    target="_blank" href="https://stellartech.in" style="color: white; text-decoration: underline;">Stellartech</a>
-                | Proprietor <a target="_blank"
-                                style="color: white; text-decoration: underline;"
-                                href="http://rutvik.fusionbit.in/">Fusionbit</a> | Working partner <a target="_blank"
-                                                                                                style="color: white; text-decoration: underline;"
-                                                                                                href="http://limpiar.app/">Limpiar Servicio LLP.</a></span>
-        </div>
-    </div>
-</footer>
-
 <script>
 
     var props = 1;
 
     $(document).ready(function () {
+
+        // Initialize Materialize components
+        $('.sidenav').sidenav();
+        
+        // Smooth scrolling for navigation links
+        $('a[href^="#"]').on('click', function(e) {
+            var target = $(this.getAttribute('href'));
+            if(target.length) {
+                e.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 70
+                }, 800);
+            }
+        });
+        
+        // Navbar background on scroll
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('#mainNav').addClass('nav-scrolled');
+            } else {
+                $('#mainNav').removeClass('nav-scrolled');
+            }
+        });
 
         setInterval(randomizeProp, 5000);
 
@@ -1538,6 +1530,39 @@
         });
 
     });
+
+    function randomizeProp()
+    {
+        $('#prop').fadeOut(500, function () {
+            switch (props) {
+                case 1:
+                    $('#prop').html('<img height="120" width="120" src="img/laptop.png">');
+                    props = 2;
+                    break;
+                case 2:
+                    $('#prop').html('<img height="120" width="120" src="img/camera.png">');
+                    props = 3;
+                    break;
+                case 3:
+                    $('#prop').html('<img height="120" width="120" src="img/plant.png">');
+                    props = 4;
+                    break;
+                case 4:
+                    $('#prop').html('<img height="120" width="120" src="img/dog.png">');
+                    props = 5;
+                    break;
+                case 5:
+                    $('#prop').html('<img height="120" width="120" style="padding: 10px" src="img/rubiks_cube.png">');
+                    props = 1;
+                    break;
+            }
+        });
+
+        $('#prop').fadeIn(500);
+    }
+
+</script>
+
 
     function randomizeProp()
     {
