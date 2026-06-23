@@ -1,6 +1,41 @@
+/* Header Styles */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.site-header nav {
+    height: 70px;
+    line-height: 70px;
+}
+
+.site-header .brand-logo {
+    font-family: 'Delius', cursive;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.site-header nav ul li a {
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.site-header nav ul li a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.hero-section {
+    margin-top: 70px;
+}
+
 #top-part {
     margin-top: -150px;
 }
+
 
 .rounded-image {
     border-radius: 50%;
@@ -8,15 +43,23 @@
     background-color: #00acc1;
 }
 
-.large-text {
-    font-size: xx-large;
+.cover-background {
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/cover-bg2.jpg');
+    position: absolute;
 }
 
-.content-titles {
-    font-family: 'Delius', cursive;
+.doodle-background {
+    padding: 0;
+    margin: 0;
+    height: 350px;
+    background-image: url('../img/doodle.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
-.vertical-line {
     display: block;
     height: 100%;
     background-color: black;
@@ -307,7 +350,48 @@
     width: 40%;
 }
 
-.show2, .hide2 {
+}
+
+/* Responsive Header Adjustments */
+@media only screen and (max-width: 992px) {
+    .site-header .brand-logo {
+        font-size: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .hero-section {
+        margin-top: 60px;
+    }
+    
+    #top-part {
+        margin-top: -120px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .site-header nav {
+        height: 60px;
+        line-height: 60px;
+    }
+    
+    .site-header .brand-logo {
+        font-size: 1.3rem;
+    }
+    
+    .hero-section {
+        margin-top: 60px;
+    }
+    
+    .doodle-background {
+        height: 280px;
+    }
+    
+    #top-part {
+        margin-top: -100px;
+    }
+}
+
     position: absolute;
     bottom: -1em;
     z-index: 100;

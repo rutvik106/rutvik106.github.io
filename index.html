@@ -37,10 +37,34 @@
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
+<!-- Modern Header Design -->
+<header class="site-header">
+    <nav class="nav-wrapper light-blue">
+        <div class="container">
+            <a href="#" class="brand-logo">Rutvik Mehta</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#top-part">About</a></li>
+                <li><a href="#my-heart">Story</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#photography-section">Photography</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#top-part">About</a></li>
+        <li><a href="#my-heart">Story</a></li>
+        <li><a href="#skills-section">Skills</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#photography-section">Photography</a></li>
+    </ul>
+</header>
 
-<div class="row light-blue center">
+<div class="row light-blue center hero-section">
     <div class="doodle-background"></div>
 </div>
+
 
 <div class="container">
 
@@ -127,11 +151,14 @@
                     <br/>
                     <p class="default-cursor" style="text-align: justify">I am a person with a spirit of doing something
                         which has lots of
-                        challenges and risks in it. I always
-                        love helping others. Though I am a gizzmo addict, I dream of living a social life. I am a
-                        software
-                        Engineer by profession, a passionate coder and a photographer. Along with my skills, I put all
-                        my
+    <br>
+
+    <div class="row" id="skills-section">
+        <div class="col s12 center">
+            <h4 class="content-titles default-cursor">Skills</h4>
+        </div>
+    </div>
+
                         heart in whatever projects I do. I enjoy coding and applying skills to develop new things. I
                         believe
                         in working with dedication and transparency with my clients. I like experimenting with my
@@ -214,11 +241,12 @@
                 Git Hub
             </div>
             <div class="chip">
-                XMPP
-            </div>
-            <div class="chip">
-                Openfire
-            </div>
+    <div class="row" id="projects-section">
+        <div class="col s12 center">
+            <h4 class="content-titles default-cursor">Projects & Contributions</h4>
+        </div>
+    </div>
+
             <div class="chip">
                 Smack
             </div>
@@ -1137,11 +1165,12 @@
                             Adobe Action Script 3.</p>
                     </div>
                 </div>
-            </div>
+    <div class="row" id="photography-section">
+        <div class="col s12 center">
+            <h4 class="content-titles default-cursor">Photography</h4>
+        </div>
+    </div>
 
-            <div class="col s12 m6 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="img/scm.png">
                     </div>
                     <div class="card-content">
@@ -1454,30 +1483,46 @@
                     <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
                                                                       href="https://github.com/rutvik106">
                         <img class="social-btn" src="img/github.png">
-                    </a></li>
-                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
-                                                                      href="https://www.linkedin.com/in/rutvik-mehta-33b0b139/">
-                        <img class="social-btn" src="img/linkedin.png">
-                    </a></li>
-                    <li style="display: inline; margin-right: 5%;"><a target="_blank" class="grey-text text-lighten-3"
-                                                                      href="https://500px.com/rutvikmehta">
-                        <img class="social-btn" src="img/500px_logo.png">
-                    </a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            <span class="default-cursor">Rutvik Mehta</span>
-            <span style="" class="grey-text text-lighten-4 right">Director <a target="_blank"
-                                                                     style="color: white; text-decoration: underline;"
-                                                                     href="http://identitysignet.com/">Identitysignet Ltd.</a> | CTO <a
-                    target="_blank" href="https://stellartech.in" style="color: white; text-decoration: underline;">Stellartech</a>
-                | Proprietor <a target="_blank"
-                                style="color: white; text-decoration: underline;"
-                                href="http://rutvik.fusionbit.in/">Fusionbit</a> | Working partner <a target="_blank"
-                                                                                                style="color: white; text-decoration: underline;"
+<script>
+
+    var props = 1;
+
+    $(document).ready(function () {
+
+        // Initialize mobile sidenav
+        $('.sidenav').sidenav();
+
+        // Smooth scrolling for navigation links
+        $('nav a[href^="#"], .sidenav a[href^="#"]').click(function(e) {
+            var target = $(this.hash);
+            if (target.length) {
+                e.preventDefault();
+                $('.sidenav').sidenav('close');
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 80
+                }, 800);
+            }
+        });
+
+        setInterval(randomizeProp, 5000);
+
+        $('#my-heart').hover(function () {
+            $('#mom').addClass('mom-animation');
+            $('#dad').addClass('dad-animation');
+            $('#sis').addClass('sis-animation');
+            $('#wife').addClass('wife-animation');
+            $('#heart-core').removeClass('heart-animation');
+
+        }, function () {
+            $('#mom').removeClass('mom-animation');
+            $('#dad').removeClass('dad-animation');
+            $('#sis').removeClass('sis-animation');
+            $('#wife').removeClass('wife-animation');
+            $('#heart-core').addClass('heart-animation');
+        });
+
+    });
+
                                                                                                 href="http://limpiar.app/">Limpiar Servicio LLP.</a></span>
         </div>
     </div>
