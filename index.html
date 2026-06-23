@@ -37,49 +37,72 @@
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
-
-<div class="row light-blue center">
-    <div class="doodle-background"></div>
-</div>
-
-<div class="container">
-
-
-    <div class="row" id="top-part">
-
-        <div class="col s12 center">
-
-            <div id="me">
-
-                <img class="rounded-image" src="img/me2.jpeg">
-
-            </div>
-
-        </div>
-
+<!-- Professional Navigation Bar -->
+<nav class="professional-nav" id="mainNav">
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">
+            <span class="logo-text">Rutvik Mehta</span>
+        </a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#photography" class="nav-link">Photography</a></li>
+            <li><a href="mailto:rutvik@fusionbit.in" class="nav-link-cta">Contact</a></li>
+        </ul>
     </div>
+</nav>
 
+<!-- Mobile Sidenav -->
+<ul class="sidenav" id="mobile-nav">
+    <li><a href="#about" class="sidenav-close">About</a></li>
+    <li><a href="#skills" class="sidenav-close">Skills</a></li>
+    <li><a href="#projects" class="sidenav-close">Projects</a></li>
+    <li><a href="#photography" class="sidenav-close">Photography</a></li>
+    <li><a href="mailto:rutvik@fusionbit.in" class="sidenav-close">Contact</a></li>
+</ul>
+
+<!-- Professional Hero Header Section -->
+<header class="hero-header">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <div class="row">
+            <div class="col s12 center">
+                <div class="profile-image-wrapper">
+                    <img class="profile-image" src="img/me2.jpeg" alt="Rutvik Mehta">
+                </div>
+                <h1 class="hero-title">
+                    <span class="name-highlight">Rutvik Mehta</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="accent-text">{ june born gemini }</span>
+                </p>
+                <p class="hero-tagline">
+                    Full-Stack Developer | Photographer | Animal Lover
+                </p>
+                <div class="hero-divider"></div>
+            </div>
+        </div>
+    </div>
+    <a href="#about" class="scroll-down-arrow">
+        <i class="material-icons">keyboard_arrow_down</i>
+    </a>
+</header>
+
+<!-- About Section -->
+<div class="container" id="about">
 
     <div class="row">
-
         <div class="col s12 center">
-
-            <div id="my-name">
-
-                <span class="large-text content-titles default-cursor">rutvikMehta</span>
-                <br>
-                {<span class="content-titles default-cursor"
-                       style="color: rgb(253,231,78);"> june born gemini </span>}
-                <br/>
-                <br/>
-                <span class="default-cursor"
-                      style="color: #666666;">Full-Stack Developer | Photographer | Animal Lover</span>
-
+            <br/>
+            <div id="prop">
+                <img height="120" width="120" src="img/rubiks_cube.png">
             </div>
-
+            <br/>
         </div>
-
     </div>
+
 
     <div class="row">
         <div class="col s12 center">
