@@ -32,15 +32,60 @@
 </head>
 
 <body style="background-color: #fefefe">
+
+<!-- Modern Professional Header -->
+<header class="site-header" role="banner">
+    <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#" class="brand-logo" aria-label="Rutvik Mehta Home">
+                    <span class="brand-text">Rutvik</span><span class="brand-accent">Mehta</span>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#top-part" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#photography" class="nav-link">Photography</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-social">
+                <a href="https://github.com/rutvik106" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-icon">
+                    <img src="img/github.png" alt="GitHub" width="24" height="24">
+                </a>
+                <a href="https://www.linkedin.com/in/rutvik-mehta-33b0b139/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon">
+                    <img src="img/linkedin.png" alt="LinkedIn" width="24" height="24">
+                </a>
+                <a href="https://500px.com/rutvikmehta" target="_blank" rel="noopener noreferrer" aria-label="500px Profile" class="social-icon">
+                    <img src="img/500px_logo.png" alt="500px" width="24" height="24">
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-greeting">Full-Stack Developer</span>
+                <span class="hero-subtitle">Building exceptional digital experiences</span>
+            </h1>
+        </div>
+    </div>
+</header>
+
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
-
-<div class="row light-blue center">
-    <div class="doodle-background"></div>
-</div>
 
 <div class="container">
 
@@ -66,14 +111,13 @@
 
             <div id="my-name">
 
-                <span class="large-text content-titles default-cursor">rutvikMehta</span>
-                <br>
-                {<span class="content-titles default-cursor"
-                       style="color: rgb(253,231,78);"> june born gemini </span>}
-                <br/>
-                <br/>
-                <span class="default-cursor"
-                      style="color: #666666;">Full-Stack Developer | Photographer | Animal Lover</span>
+                <h2 class="large-text content-titles default-cursor" style="margin-top: 0;">rutvikMehta</h2>
+                <p class="content-titles default-cursor" style="color: rgb(253,231,78); font-size: 1.2rem;">
+                    {june born gemini}
+                </p>
+                <p class="default-cursor" style="color: #666666; font-size: 1.1rem; margin-top: 1rem;">
+                    Full-Stack Developer | Photographer | Animal Lover
+                </p>
 
             </div>
 
@@ -151,9 +195,9 @@
 
     <br>
 
-    <div class="row">
+    <div class="row" id="skills">
         <div class="col s12 center">
-            <h4 class="content-titles default-cursor">Skills</h4>
+            <h3 class="content-titles default-cursor section-title">Skills</h3>
         </div>
     </div>
 
@@ -241,9 +285,9 @@
     <br>
     <br>
 
-    <div class="row">
+    <div class="row" id="projects">
         <div class="col s12 center">
-            <h4 class="content-titles default-cursor">Projects & Contributions</h4>
+            <h3 class="content-titles default-cursor section-title">Projects & Contributions</h3>
         </div>
     </div>
 
@@ -1165,9 +1209,9 @@
 
     <br>
 
-    <div class="row">
+    <div class="row" id="photography">
         <div class="col s12 center">
-            <h4 class="content-titles default-cursor">Photography</h4>
+            <h3 class="content-titles default-cursor section-title">Photography</h3>
         </div>
     </div>
 
@@ -1425,7 +1469,7 @@
 
 <!--THIS IS A FOOTER PART-->
 
-<footer class="page-footer" style="background-color: #03a9f4">
+<footer class="page-footer" id="contact" style="background-color: #03a9f4">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
